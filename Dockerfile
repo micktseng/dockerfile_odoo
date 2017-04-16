@@ -1,4 +1,4 @@
-FROM odoo:8
+FROM odoo:10.0
 
 MAINTAINER suncombo@gmail.com
 
