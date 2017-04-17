@@ -10,6 +10,6 @@ RUN apt-get update && apt-get install -y ttf-wqy-zenhei ttf-wqy-microhei \
 
 
 COPY ./pfbfer/* /usr/lib/python2.7/dist-packages/reportlab/fonts/
-COPY ./sitecustomize.py /usr/lib/python2.7/site-packages/sitecustomize.py
+COPY ./sitecustomize.py /etc/python2.7/sitecustomize.py
 
 USER odoo
