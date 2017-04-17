@@ -13,9 +13,8 @@ COPY ./pfbfer/* /usr/lib/python2.7/dist-packages/reportlab/fonts/
 COPY ./sitecustomize.py /etc/python2.7/sitecustomize.py
 
 # Set the locale
-RUN locale-gen en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US:en
-ENV LC_ALL en_US.UTF-8
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
 
 USER odoo
