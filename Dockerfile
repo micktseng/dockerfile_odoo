@@ -11,7 +11,7 @@ RUN apt-get update \
                        locales locales-all \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/* \
- && pip install python-slugify
+ && pip install python-slugify unicodecsv
 
 COPY ./pfbfer/* /usr/lib/python2.7/dist-packages/reportlab/fonts/
 #COPY ./sitecustomize.py /etc/python2.7/sitecustomize.py
